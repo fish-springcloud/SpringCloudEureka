@@ -1,0 +1,15 @@
+server:
+  port: 8071
+
+spring:
+  application:
+    name: provider8071
+
+# 其他不变，添加下面的配置，将服务注册到Eureka
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      # 将自身注册到Eureka服务中心
+      defaultZone: http://localhost:8061/eureka/

@@ -1,0 +1,11 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+
+    serviceUrl:
+      # 配置注册中心的地址
+      defaultZone: http://localhost:8061/eureka/

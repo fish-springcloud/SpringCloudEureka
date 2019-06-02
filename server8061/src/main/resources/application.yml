@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server-8061
+
+server:
+  port: 8061
+
+eureka:
+  instance:
+    hostname: localhost
+
+  client:
+    fetch-registry: false
+
+    # 不把自身注册为客户端
+    register-with-eureka: false
